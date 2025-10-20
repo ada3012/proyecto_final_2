@@ -1,9 +1,21 @@
+@import url('fonts.css');
+
 html, body{
-    padding: 0;
-    bottom: 0;
-    margin: 0;
+  padding: 0;
+  bottom: 0;
+  margin: 0;
 }
 
+.titulo_pag{
+  text-align: center;
+  font-family: 'Montserrat-regular';
+  color:#265275;
+  width: 100%;
+}
+
+
+
+/* modo obscuro*/
 body.dark-mode {
   background-color: #121212;
   color: white;
