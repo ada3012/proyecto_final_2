@@ -1,0 +1,116 @@
+@import url('fonts.css');
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.titulo_pag {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: #2b1874;
+  height: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden; 
+}
+
+.titulo, .titulo_2 {
+  margin: 0;
+  font-weight: 700;
+  transform: skewX(-10deg);
+  background: linear-gradient(
+    90deg,
+    #9e9e9e 0%,
+    #d9d9d9 25%,
+    #f2f2f2 50%,
+    #d9d9d9 75%,
+    #9e9e9e 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
+  font-family: 'nunito-italic';
+  opacity: 0;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-150%) skewX(-10deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(10%) skewX(-10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) skewX(-10deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(150%) skewX(-10deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-10%) skewX(-10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) skewX(-10deg);
+    opacity: 1;
+  }
+}
+
+.titulo {
+  animation: slideInLeft 1.5s ease-out forwards, glow 2.5s ease-in-out 1.5s infinite alternate;
+}
+
+.titulo_2 {
+  animation: slideInRight 1.5s ease-out forwards, glow 2.5s ease-in-out 1.5s infinite alternate;
+  animation-delay: 0.3s;
+}
+
+
+
+/* modo obscuro*/
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .container {
+  color: #cfd8dc;
+}
+
+body.dark-mode .section {
+  background: #1e1e1e;
+}
+
+body.dark-mode .section-title {
+  color: #90caf9;
+  border-bottom: 2px solid #90caf9;
+}
+
+body.dark-mode menu {
+  background-color: #0d1b2a;
+}
+
+body.dark-mode menu ul li a {
+  color: #eceff1;
+}
+
+body.dark-mode menu ul li a:hover {
+  background-color: #bb86fc;
+  color: #000;
+}
+
+body.dark-mode .carrusel-section {
+    background-color: #000000;
+    padding: 50px 0;
+}
