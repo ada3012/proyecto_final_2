@@ -9,7 +9,7 @@ html, body {
   align-items: center;
   text-align: center;
   width: 100%;
-  background-color: #2b1874;
+  background-color: #37267a;
   height: 165px;
   display: flex;
   justify-content: center;
@@ -76,6 +76,11 @@ html, body {
   animation-delay: 0.3s;
 }
 
+.texto_pag{ 
+  font-family: 'Montserrat-semibold';
+  align-items: center;
+  text-align: center;
+}
 
 
 /* modo obscuro*/
@@ -98,11 +103,79 @@ body.dark-mode .section-title {
 }
 
 body.dark-mode menu {
-  background-color: #0d1b2a;
+  background-color: #1d1753;
 }
 
 body.dark-mode menu ul li a {
   color: #eceff1;
+}
+
+body.dark-mode menu ul li a:hover {
+  background-color: #7c11ff;
+  color: #000;
+}
+
+body.dark-mode .carrusel-section {
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+.carrusel-section {
+    background-color: #ffffff; /* Fondo blanco para el carrusel */
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carrusel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagen {
+    min-width: 100%;
+    position: relative;
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carrusel_title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.carrusel-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.nav-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
 }
 
 body.dark-mode menu ul li a:hover {
@@ -111,6 +184,10 @@ body.dark-mode menu ul li a:hover {
 }
 
 body.dark-mode .carrusel-section {
-    background-color: #000000;
+    background-color: #000000; /* Fondo blanco para el carrusel */
     padding: 50px 0;
+}
+
+.dark-mode .titulo_pag {
+   background-color: #251566;
 }

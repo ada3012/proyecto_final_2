@@ -8,7 +8,7 @@ class Menu extends HTMLElement {
         @import url("../css/fonts.css");
 
         menu {
-          background-color: #2c3e50;
+          background-color: #271861;
           padding: 10px 0;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
           margin: 0;
@@ -90,7 +90,7 @@ class Menu extends HTMLElement {
       overflow: hidden;
       transition: max-height 0.4s ease, opacity 0.4s ease;
       flex-direction: column;
-      background-color: #2c3e50;
+      background-color: #251566;
       position: absolute;
       top: 60px;
       left: 0;
