@@ -132,3 +132,8 @@ body.dark-mode .carrusel-section {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.titulo_pag{
+  text-align: center;
+  font-family: 'nunito-italic';  
+}
