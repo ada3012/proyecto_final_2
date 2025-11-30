@@ -123,6 +123,20 @@
         </div>
     </div>
 
+    <h2>Escribe tu reseña</h2>
+<form action="guardar_resena.php" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required><br><br>
+    <textarea name="comentario" placeholder="Escribe tu opinión..." required></textarea><br><br>
+    <button type="submit">Enviar</button>
+</form>
+
+<hr>
+
+<h2>Reseñas de Usuarios:</h2>
+<div id="lista-resenas">
+    <?php include("obtener_resenas.php"); ?>
+</div>
+
     <script src="./js/header.js"></script>
 </body>
 
